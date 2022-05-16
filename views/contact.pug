@@ -1,0 +1,33 @@
+//- contact.pug
+doctype html
+html
+  head
+    title Ramada Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            li #[a(href="/") Home] 
+            li #[a(href="/") Services] 
+            li #[a(href="/") About]  
+            li #[a(href="/contact") Contact]  
+
+    div#contactsection
+        h2 Contact Us 
+        form(action="/contact", method="post",class="mainForm")
+            input(type="text", class="myinput", name="name", placeholder="Enter your name")
+            input(type="phone", class="myinput", name="phone", placeholder="Enter your Phone number")
+            input(type="email", class="myinput", name="email", placeholder="Enter your Email")
+            input(type="age", class="myinput", name="age", placeholder="Enter your Age")
+            input(type="concern", class="myinput", name="concern", placeholder="Enter your Concern")
+            button(type="submit", class="mybtn")
+                strong Submit
+
+
+    
+    footer#footersection 
+        div Copyright Ⓒ 2022 Ramada Dance Academy | All Rights Reserved
+
+    script
+      include ../static/script.js

@@ -1,0 +1,50 @@
+//- index.pug
+doctype html
+html
+  head
+    title Ramada Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            li #[a(href="/") Home] 
+            li #[a(href="/") Services] 
+            li #[a(href="/") About]  
+            li #[a(href="/contact") Contact]  
+
+
+    section#introsection 
+        div.main Welcome to Ramada Dance Academy
+        div.small Eat Sleep Dance Repeat
+    
+    section#missionsection 
+        div.main#mission Our Mission
+        div.cards
+            div.card #[p Dance Perfection]
+                div.img-box
+                    img(src="./static/dance1.jpg")
+            div.card #[p Dance the way you like]
+                div.img-box
+                    img(src="./static/dance3.jpg")
+            div.card #[p Expert Teaching]
+                div.img-box
+                    img(src="./static/dance2.jpg")
+
+    section#sponsorsection 
+        div Sponsors
+        div#sponsor-cards
+            div.img-box.spon-img
+                img(src="./static/amazon.png")
+            div.img-box.spon-img
+                img(src="./static/apple.png")
+            div.img-box.spon-img
+                img(src="./static/facebook.png")
+            div.img-box.spon-img
+                img(src="./static/microsoft.png")
+    
+    footer#footersection 
+        div Copyright Ⓒ 2022 Ramada Dance Academy | All Rights Reserved
+
+    script
+      include ../static/script.js
